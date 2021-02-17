@@ -57,22 +57,30 @@ const HomePage = () => {
   ]);
 
   const handleLogout = () => {
-      dispatch(logoutUser())
-  }
+    dispatch(logoutUser());
+  };
 
   return (
-      <>
-    {isGetUserRequest && <Skeleton active />}
-    {isGetUserSuccess &&<div>
-        <Row justify="center">
-      <Typography.Title>
-        Welcome {getUserData[0].first_name} {getUserData[0].last_name}
-      </Typography.Title>
-    </Row>
-    <Row justify="center">
-        <Button type="ghost" onClick={handleLogout}>Logout</Button>
-    </Row>
-    </div> }
+    <>
+      {isGetUserRequest && <Skeleton active />}
+      {isGetUserSuccess && (
+        <div>
+          <Row justify="center">
+            <Typography.Title>
+              Welcome {getUserData[0].first_name} {getUserData[0].last_name}
+            </Typography.Title>
+          </Row>
+          <Row justify="center">
+            <Button
+              type="ghost"
+              onClick={handleLogout}
+              loading={isLogoutRequest}
+            >
+              Logout
+            </Button>
+          </Row>
+        </div>
+      )}
     </>
   );
 };

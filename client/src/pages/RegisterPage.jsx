@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Form, Input, Button, message,Typography } from "antd";
+import { Form, Input, Button, message, Typography } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { registerUser } from "../redux/userActions";
@@ -54,7 +54,7 @@ const RegisterPage = () => {
 
   return (
     <div className="form_container">
-    <Typography.Title level={3}>Register</Typography.Title>
+      <Typography.Title level={3}>Register</Typography.Title>
       <Form
         {...layout}
         name="register_form"
@@ -118,8 +118,10 @@ const RegisterPage = () => {
             Register
           </Button>
         </Form.Item>
-        <Typography.Text>Already have an Account !!  </Typography.Text>
-        <Typography.Link onClick={() => history.push("/login")}>login here</Typography.Link>
+        <Typography.Text>Already have an Account !! </Typography.Text>
+        <Typography.Link onClick={() => history.push("/login")}>
+          login here
+        </Typography.Link>
       </Form>
     </div>
   );

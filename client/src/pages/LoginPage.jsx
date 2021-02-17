@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { loginUser } from "../redux/userActions";
 
 const LoginPage = () => {
-    const history = useHistory();
+  const history = useHistory();
   const dispatch = useDispatch();
 
   const {
@@ -50,9 +50,9 @@ const LoginPage = () => {
     );
   };
 
-    return (
-        <div className="form_container">
-            <Typography.Title level={3}>Login</Typography.Title>
+  return (
+    <div className="form_container">
+      <Typography.Title level={3}>Login</Typography.Title>
       <Form
         {...layout}
         name="login_form"
@@ -90,11 +90,13 @@ const LoginPage = () => {
             Login
           </Button>
         </Form.Item>
-        <Typography.Text>Don't have an Account !!  </Typography.Text>
-        <Typography.Link onClick={() => history.push("/register")}>Register here</Typography.Link>
+        <Typography.Text>Don't have an Account !! </Typography.Text>
+        <Typography.Link onClick={() => history.push("/register")}>
+          Register here
+        </Typography.Link>
       </Form>
     </div>
-    );
+  );
 };
 
 export default LoginPage;

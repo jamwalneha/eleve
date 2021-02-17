@@ -1,9 +1,9 @@
-import {Switch, Route, Redirect} from "react-router-dom"
+import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import './App.css';
-import "./styles.scss"
+import "./App.css";
+import "./styles.scss";
 
 function App() {
   return (

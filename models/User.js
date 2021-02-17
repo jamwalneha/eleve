@@ -5,16 +5,16 @@ const { ObjectId } = Schema.Types;
 
 const userSchema = new Schema(
   {
-   first_name: {
+    first_name: {
       type: String,
       required: true,
       trim: true,
     },
     last_name: {
-        type: String,
-        required: true,
-        trim: true,
-      },
+      type: String,
+      required: true,
+      trim: true,
+    },
     email: {
       type: String,
       trim: true,
