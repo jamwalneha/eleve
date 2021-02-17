@@ -1,0 +1,11 @@
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:8% auto;
+    background-color:aliceblue;
+    box-shadow: 0px 1px 10px 0px rgba(233, 60, 60, 0.384);
+    min-height: 25rem;
+    width:25rem;
+}
